@@ -84,8 +84,100 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   General styles
    ========================================================================== */
+   * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Lekton', sans-serif;
+    font-size: 1em;
+    background: #fffdfa;
+    color: #28282B;
+  }
+
+  .content-wrapper {
+    width: 90%;
+    margin: 5em 0 5em 0;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #28282B;
+    font-size: 2em;
+  }
+/* ========== NAV BAR MOBILE STYLING =========== */
+  .navbar {
+    display: flex;
+    padding: 8px 12px;
+    background: #fffdfa;
+    color: #28282B;
+    flex-direction: column;
+    margin-top:15px;
+  }
+  
+  /* Logo with text */
+  .navbar__logo {
+    font-size: 24px;
+  }
+  
+  /* .navbar__logo i {
+    background: #E9B14C;
+  } */
+  
+  /* Menu */
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .navbar__menu li {
+    padding: 8px 12px;
+  }
+  
+  .navbar__menu a {
+    /* Fill in an entire line so that user can click on any space */
+    display: block;
+  }
+  
+  
+  .navbar__icons {
+    list-style: none;
+    color: RGB(168, 213, 203);
+    display: none;
+    justify-content: center;
+    padding-left: 0;
+  }
+  
+  
+  /* Icons */
+  .navbar__icons li {
+    padding: 8px 12px;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  /* Toggle button */
+  .navbar__toggleBtn {
+    display: block;
+    position: absolute;
+    right: .5em;
+    font-size: 2.5em;
+  }
+  
+  /* When toggle button is clicked - active state */
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+  
+
 
 /* ==========================================================================
    Helper classes
@@ -170,10 +262,93 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+    Media Queries for Responsive Design
    ========================================================================== */
+/* Tablet Styling */
+@media only screen and (min-width: 768px) {
+  /* General Styling */
+  a {
+    font-size: 1.5em;
+  }
+  .content-wrapper {
+    margin: 4.6875em 0;
+  }
+  h2{
+    margin: 3em 0 0 0;
+  }
+  p {
+    font-size: 2vmin;
+  }
+  /* Nav Styling */
+  .navbar__toggleBtn {
+    right: 1.25em;
+    font-size: 2.5em;
+  }
+  
+}
+
+/* Desktop Styling */
+@media only screen and (min-width: 1200px) {
+  /* ========General Styling======== */
+p {
+  font-size: 1.125em;
+}
+  /* ========Nav Styling ======== */
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  flex-flow: row nowrap;
+}
+
+/* Nav Logo with text */
+.navbar__logo {
+  font-size: 24px;
+  color: RGBA(168, 213, 203);
+}
+
+.navbar__logo i {
+  color: RGBA(168, 213, 203);
+}
+
+/* Nav Menu */
+.navbar__menu {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  flex-direction: row;
+  width: 30%;
+}
+
+.navbar__menu li {
+  padding: 8px 12px;
+}
+
+.navbar__icons {
+  list-style: none;
+  color: RGB(168, 213, 203);
+  display: flex;
+  padding-left: 0;
+  font-size: 1.5em;
+}
+
+/* Nav Icons */
+.navbar__icons li {
+  padding: 8px 12px;
+}
+
+/* Nav Toggle button */
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+  
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
