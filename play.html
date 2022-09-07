@@ -29,7 +29,7 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body class="play__body">
 
 <!-- NAV container -->
 <nav class="navbar">
@@ -39,7 +39,7 @@
   </div>
   <!-- Menu -->
   <ul class="navbar__menu">
-    <li><a href="./portfolio/index.html">Work</a></li>
+    <li><a href="./projects.html">Work</a></li>
     <li><a href="#connect">Connect</a></li>
   </ul>
   <!-- Icons with intentions to become light mode dark mode toggle  -->
@@ -55,10 +55,26 @@
 </nav>
 <!-- END NAV container -->
 
-
-
 <main>
-<h1>Coming SOON!</h1>
+    <section id="guess__section">
+    <div class="game__container">
+        <h1>
+          <img class="logo" src="img/logo.png" alt="Guess The Word" />
+        </h1>
+        <p class="message"></p>
+        <p class="word-in-progress"></p>
+        <p class="remaining">You have <span>8 guesses</span> remaining.</p>
+        <ul class="guessed-letters"></ul>
+        <form action="" class="guess-form">
+          <label for="letter">Type one letter:</label>
+          <input type="text" name="letter" class="letter" />
+          <div class="form-element button-element">
+            <button class="guess">Guess!</button>
+          </div>
+        </form>
+        <button class="play-again hide">Play Again!</button>
+      </div>
+      </section>
   <section id ="contact__area" >
     <div class="content-wrapper">
         <div class="contact_info">
