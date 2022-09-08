@@ -338,9 +338,11 @@ textarea {
   
 }
   #about__area figure{
-    width: 80%;
+    width: 40%;
     margin: 1.5em 0 0 0;
   }
+
+
   #about__area article{
     width: 100%;
   }
@@ -495,7 +497,7 @@ h1 {
 
 .highlight {
   padding: 0.25em;
-  background: #ffe2d6;
+  background: #d4f2f2;
   font-size: 1em;
 }
 
@@ -581,7 +583,7 @@ input:focus {
 /* animatied background */
 .win {
   padding: 0 1em;
-  background: linear-gradient(-45deg, #ff9d64, #f5620c);
+  background: linear-gradient(-45deg, #d4f2f2, #28bdbd);
   background-size: 400% 400%;
   animation: gradient 2s ease infinite;
 }
@@ -730,7 +732,8 @@ input:focus {
 }
 #about__area figure{
   display: inline-block;
-  width: 40%;
+  margin-right: 35px;
+  width: 20%;
 }
 #about__area article {
 width: 50%;
