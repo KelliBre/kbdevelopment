@@ -339,19 +339,15 @@ img {
   
 }
 
-  #about__area figure{
-    width: 50%;
-    margin: 1.5em 0 0 0;
-  }
 
 
-  #about__area article{
-    width: 100%;
-  }
+#about__area article{
+  width: 100%;
+}
 
-  #about__area p {
-    margin-bottom: 1em;
-  }
+#about__area p {
+  margin-bottom: 1em;
+}
 
 
 /* ======== Project Area =========== */
@@ -693,9 +689,11 @@ font-size: 12px;
 /* ==========================================================================
     Media Queries for Responsive Design
    ========================================================================== */
-/* Tablet Styling */
+
+/*********** Tablet Styling **************/
+
 @media only screen and (min-width: 768px) {
-  /* General Styling */
+  /*===== General Styling===== */
   a {
     font-size: 1.5em;
   }
@@ -706,96 +704,89 @@ font-size: 12px;
   p {
     font-size: 2vmin;
   }
-  /* Nav Styling */
+  /*===== Nav Styling===== */
   .navbar__toggleBtn {
     right: 1.25em;
     font-size: 2.5em;
   }
-
+  /*===== Hero-Area Styling===== */
   #hero-area .content-wrapper{
     flex-direction: row;
   }
-#hero-area figure{
-  display: inline-block;
-  width: 40%;
-}
-.hero__content__container{
-  width: 50%;
-  margin:0;
+  #hero-area figure{
+    display: inline-block;
+    width: 40%;
+  }
+  .hero__content__container{
+    width: 50%;
+    margin:0;
 
-}
+  }
+  /*===== Skill Area Styling===== */
+  .skill__block{
+    width: 33%;
+    margin: 1em 1em 1em 1em;
+  }
 
-.skill__block{
-  width: 33%;
-  margin: 1em 1em 1em 1em;
-}
+  #skill__area .content-wrapper{
+    flex-direction: row;
+  }
 
-#skill__area .content-wrapper{
-  flex-direction: row;
-}
+  /*======= About Area Styling======== */
+  #about__area article {
+  width: 70%;
+  }
 
-#about__area .content-wrapper{
-  flex-direction: row;
-}
-#about__area figure{
-  display: inline-block;
-  margin-right: 35px;
-  width: 20%;
-}
-#about__area article {
-width: 50%;
-}
+    
+  /*=========FEATURED PROJECT SECTION=========*/
+  #project__area article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 
-  
-    /*=========FEATURED PROJECT SECTION=========*/
-    #project__area article {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
-    }
-  
-    #project__area article figure {
-      width: 49%;
-    }
-    #project__area img {
-      width: 80%;
-    }
-  
-    #project__area article div {
-      width: 39%;
-      padding: 1em;
-    }
-  
-    #project__areah3 {
-      margin: 0;
-      font-size: 1.25em;
-    }
-    #project__area h2 {
-      text-align: center;
-      margin-bottom: 1.5em;
-    }
-  
-      
-    /*=======CONTACT SECTION=========*/
-  
-    #contact__area .content-wrapper {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-flow: row wrap;
-      margin-bottom: 2.5em;
-    }
-  
-    #contact__area figure {
-      display: flex;
-      justify-content: center;
-      width: 35%;
-    }
-  
-    #contact_info {
-      margin: 0;
-    }
+  #project__area article figure {
+    width: 49%;
+  }
+  #project__area img {
+    width: 80%;
+  }
+
+  #project__area article div {
+    width: 39%;
+    padding: 1em;
+  }
+
+  #project__areah3 {
+    margin: 0;
+    font-size: 1.25em;
+  }
+  #project__area h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+
+    
+  /*=======CONTACT SECTION=========*/
+
+  #contact__area .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 2.5em;
+  }
+
+  #contact__area figure {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+  }
+
+  #contact_info {
+    margin: 0;
+  }
 }
 
 /* Desktop Styling */
