@@ -160,9 +160,9 @@ h2{
   width: 90%;
   text-align: center;
 }
-h3{
+/* h3{
   margin: 1;
-}
+} */
 p{
   margin:0;
 }
@@ -170,6 +170,10 @@ p{
 img {
   width: 100%;
 }
+
+/* .project-img{
+  border-radius: 50%;
+} */
 /* ========== NAV BAR MOBILE STYLING =========== */
 .navbar {
   display: flex;
@@ -362,7 +366,7 @@ img {
 
   
   #project__area article {
-    margin-bottom: 2.5em 1em, 2.5em, 1em;
+    margin-bottom: 2.5em 1em 2.5em 1em;
   }
   
   #project__area h2 {
@@ -373,9 +377,7 @@ img {
     margin: 0.3125em;
   }
   
-  #project__area img {
-    border-radius: 5%;
-  }
+
 
 /*========CONTACT SECTION========*/
 
