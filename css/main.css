@@ -155,8 +155,10 @@ text-shadow: 1px 1px 2px #427388;
 
 h1{
   font-size: 1.5em;
+  font-family: 'Lexend Tera', sans-serif;
 }
 h2{
+  font-family: 'Lexend Tera', sans-serif;
   width: 90%;
   text-align: center;
 }
@@ -469,7 +471,7 @@ footer {
   max-width: 484px;
 }
 
-h1 {
+.game-h1 {
   width: 100%;
   padding-top: 1em;
   margin: 0;
