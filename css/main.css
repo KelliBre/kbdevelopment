@@ -603,6 +603,12 @@ input:focus {
     background-position: 0% 50%;
   }
 }
+.sc-kudos{
+  text-align: center;
+  margin: 1%;
+  font-size: .75rem;
+
+}
 
 .project__skills{
 font-weight: lighter;

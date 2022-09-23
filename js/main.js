@@ -140,7 +140,7 @@ const countRemainingGuesses = function(guess){
   }
 
   if (remainingGuesses === 0){
-    messageForGuess.innerHTML='Game over! The word was <span class="highlight">${word}</span>.';
+    messageForGuess.innerHTML=`Game over! The word was <span class="highlight"> ${word} </span>.`;
   } else if (guessedLetters === 1){
     remainingGuessSpan.innerText= `${remainingGuesses}guess!`;
   }else{
