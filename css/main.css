@@ -402,6 +402,8 @@ img {
 }
 #contact__area a{
   color:#333333 ;
+  font-size: 1.25em;
+  text-transform: none;
 }
 #contact_info .content-wrapper {
   margin: 6.25em 0.9375em;
