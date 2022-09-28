@@ -613,8 +613,14 @@ input:focus {
 }
 
 .project__skills{
-font-weight: lighter;
-font-size: 12px;
+  font-weight: lighter;
+  font-size: 12px;
+  margin: 15px;
+  }
+
+.skills-span{
+  text-transform: uppercase;
+  font-weight: 900;
 }
 /* ==========================================================================
    Helper classes
