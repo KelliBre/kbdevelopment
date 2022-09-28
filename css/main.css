@@ -108,11 +108,13 @@ body {
   flex-flow: row wrap;
 }
 
+nav a{
+  font-size: 2em;
+}
 a {
   text-decoration: none;
   text-transform: uppercase;
   color: #28282B;
-  font-size: 2em;
 }
 
 a.button {
@@ -154,9 +156,11 @@ text-shadow: 1px 1px 2px #427388;
 }
 
 h1{
-  font-size: 1.5em;
+  font-size: 1.25em;
+  font-weight: 700;
   font-family: 'Lexend Tera', sans-serif;
 }
+
 h2{
   font-family: 'Lexend Tera', sans-serif;
   width: 90%;
