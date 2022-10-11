@@ -156,15 +156,17 @@ text-shadow: 1px 1px 2px #427388;
 }
 
 h1{
-  font-size: 1.25em;
+  font-size: 1.250em;
   font-weight: 700;
   font-family: 'Lexend Tera', sans-serif;
 }
 
 h2{
+  font-size: 1.375em;
   font-family: 'Lexend Tera', sans-serif;
   width: 90%;
   text-align: center;
+
 }
 /* h3{
   margin: 1;
@@ -294,12 +296,13 @@ img {
   color: RGB(168, 213, 203);
   justify-content: center;
   padding-left: 0;
+  font-size: 2em;
 }
 
 .hero__icons li{
   padding: 8px 5px;
   border-radius: 50%;
-  margin: 0 10px;
+  margin: 0 20px;
 
 }
 #hero-area p{
@@ -716,11 +719,11 @@ input:focus {
 @media only screen and (min-width: 768px) {
   /*===== General Styling===== */
   a {
-    font-size: 1.5em;
+    font-size: 1.125em;
   }
 
   h2{
-    margin: 3em 0 0 0;
+    margin: 2em 0 ;
   }
   p {
     font-size: 2vmin;
@@ -775,7 +778,7 @@ input:focus {
   }
 
   #project__area article div {
-    width: 39%;
+    width: 60%;
     padding: 1em;
   }
 
@@ -871,8 +874,8 @@ p {
   color: var(--accent-color);
 }
 
-.hero__icons li{
-font-size: 24px;
+.hero__icons{
+font-size: 2.75em;
 }
   
 }
